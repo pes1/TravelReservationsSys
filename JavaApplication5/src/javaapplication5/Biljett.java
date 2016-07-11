@@ -14,7 +14,7 @@ public class Biljett {
     public Biljett(int plats, int klass, boolean mat, String matRatt, String flight,
             String forNamn, String efterNamn){
         this.plats = plats;
-        this.pris = getPris(plats, mat, matRatt);
+        this.pris = setPris(plats, mat, matRatt);
         this.klass = klass;
         this.mat = mat;
         if (mat)this.matRatt = matRatt;
@@ -24,7 +24,7 @@ public class Biljett {
         this.efterNamn = efterNamn;
     }
     
-    public int getPris(int plats, boolean mat, Pair matRatt){
+    public int setPris(int plats, boolean mat, Pair matRatt){
         int biljettPris = 0;
         
         //1a eller 2a klass
@@ -35,4 +35,6 @@ public class Biljett {
         
         return biljettPris;
     }
+    
+    
 }
