@@ -30,13 +30,14 @@ public class Food {
         mat.add(p);
     }
     
-    public int getMeny(int v) {
-        if(v == 1) {
+    public void getMeny(int v) {
+        if(v >= 1 && v <=5) {
             System.out.println("1. Oxfile   100");
             System.out.println("2. Lasagne   70");
         }
-        else if(v == 2) {
-            
+        else if(v >= 6 && v <= 10) {
+            System.out.println("1. Köttbullar   70");
+            System.out.println("2. Gröt   40");
         }
         
     }
