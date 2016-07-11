@@ -15,30 +15,29 @@ import java.util.List;
 public class Food {
     
     Pair p;
-    List<Pair> mat;
+    List<Pair> first,economy;
             
     public Food() {
-        mat = new ArrayList<Pair>();
+        first = new ArrayList<Pair>();
+        economy = new ArrayList<Pair>();
         
         p = new Pair("Oxfilé",100,1);
-        mat.add(p);
+        first.add(p);
         p = new Pair("Lasagne",70,1);
-        mat.add(p);
+        first.add(p);
         p = new Pair("Köttbullar",70,2);
-        mat.add(p);
+        economy.add(p);
         p = new Pair("Gröt",40,2);
-        mat.add(p);
+        economy.add(p);
     }
     
-    public void getMeny(int v) {
-        if(v >= 1 && v <=5) {
-            System.out.println("1. Oxfile   100");
-            System.out.println("2. Lasagne   70");
+    public List<Pair> getMeny(int v) {
+        if(v >= 1 && v <= 5) {
+            return first;
         }
         else if(v >= 6 && v <= 10) {
-            System.out.println("1. Köttbullar   70");
-            System.out.println("2. Gröt   40");
+                return economy;
         }
-        
+        return null;
     }
 }
