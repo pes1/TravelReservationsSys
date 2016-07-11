@@ -33,7 +33,7 @@ public class Company {
         Flight f = new Flight("Airbus A-320","SK4320", "ARN", "ORY");
         fly.add(f);
         
-       
+       //kommentar
     }
     
     public List<Flight> getFlights() {
