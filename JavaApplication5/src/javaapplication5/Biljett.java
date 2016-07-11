@@ -1,14 +1,36 @@
 package javaapplication5;
 
-/**
- *
- * @author User
- */
 public class Biljett {
-    int plats;
-    int pris;
-    boolean mat;
-    String matRatt;
-    String flight;
-    String forNamn;
+    private int plats;
+    private int pris;
+    private boolean mat;
+    private Pair matRatt;
+    private String flight;
+    private String forNamn;
+    private String efterNamn;
+    //private int kundNummer;
+
+    public Biljett(int plats, boolean mat, String matRatt, String flight,
+            String forNamn, String efterNamn){
+        this.plats = plats;
+        this.pris = getPris(plats, mat, matRatt);
+        this.mat = mat;
+        if (mat)this.matRatt = matRatt;
+        else this.matRatt = null;    
+        this.flight = flight;
+        this.forNamn = forNamn;
+        this.efterNamn = efterNamn;
+    }
+    
+    public int getPris(int plats, boolean mat, Pair matRatt){
+        int biljettPris = 0;
+        
+        //1a eller 2a klass
+        if (plats < 6) biljettPris += 20000;
+        else biljettPris += 5000;
+        
+        if(mat) biljettPris += matRatt.getPris();
+        
+        return biljettPris;
+    }
 }
