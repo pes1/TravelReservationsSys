@@ -3,6 +3,7 @@ package javaapplication5;
 public class Biljett {
     private int plats;
     private int pris;
+    private int klass;
     private boolean mat;
     private Pair matRatt;
     private String flight;
@@ -10,10 +11,11 @@ public class Biljett {
     private String efterNamn;
     //private int kundNummer;
 
-    public Biljett(int plats, boolean mat, String matRatt, String flight,
+    public Biljett(int plats, int klass, boolean mat, String matRatt, String flight,
             String forNamn, String efterNamn){
         this.plats = plats;
         this.pris = getPris(plats, mat, matRatt);
+        this.klass = klass;
         this.mat = mat;
         if (mat)this.matRatt = matRatt;
         else this.matRatt = null;    
