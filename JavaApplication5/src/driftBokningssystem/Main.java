@@ -9,6 +9,7 @@ import flygResurser.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import ui.Bokning;
 
 /**
  *
@@ -36,8 +37,7 @@ public class Main {
         //-- flight(frånPlats, tillPlats, flygplan1 //-- för att få antal stolar
         //--        flightNo, prisLista);
         
-        booking(company1, ArrayList<flight> flight1);
-        //-- Återkommer hit när bokninssystemet stängs av.......
+ 
 *
 *
 *
@@ -51,12 +51,12 @@ public class Main {
         Company comp = new Company();
         
         //-- bör nog initaliseras
-        ArrayList<Biljett>    bokadeBijetter = new ArrayList<Biljett>();
-        Map<Integer, Boolean> platser        = new Map<Integer, Boolean>;
+//        List<Biljett>         bokadeBijetter = new List<Biljett>();
+        HashMap<Integer, Boolean> platser    = new HashMap<Integer, Boolean>;
    // public Flight(String destination, String avreseort, List<Biljett> bokadeBijetter, Map<Integer, Boolean> platser, int flightNumber){
 
         Flight firstFlight1;
-        firstFlight1 = new Flight("LHR","ARN", bokadeBijetter, platser, 0);
+        firstFlight1 = new Flight("LHR","ARN", bokadeBijetter, platser, 0, 20000, 5000);
 //        Flight f = new Flight("LHR","ARN", "flygplan1", "LHR");
 //        Flight f = new Flight("LHR","ARN", "flygplan1", "LHR");
 //        Flight f = new Flight("Airbus A-320","SK1020", "ARN", "LHR");
@@ -64,10 +64,15 @@ public class Main {
 //        Flight f = new Flight("Airbus A-321","SK1440", "ARN", "MAD");
 //        Flight f = new Flight("Airbus A-320","SK4320", "ARN", "ORY");
 
+        ArrayList<Biljett> flightList = new ArrayList<Biljett>();
+        flightList.add(firstFlight1);
 
-
-
-
+        
+        
+        //--  booking(company1, ArrayList<flight> flight1);
+        //-- Återkommer hit när bokninssystemet stängs av.......
+        Bokning bokningsSystemetBlåFlyg = new Bokning(flightList);
+        bokningsSystemetBlåFlyg.meny();
 
     }
 }
