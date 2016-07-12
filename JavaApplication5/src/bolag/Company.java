@@ -3,8 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package airsystem;
+package bolag;
 
+import resurser.Maträtter;
+import resurser.FlygMatMenyer;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,12 +17,12 @@ import java.util.List;
 public class Company {
     
     List<Flight> fly;
-    Pair p;
-    List<Pair> mat;
+    FlygMatMenyer p;
+    List<FlygMatMenyer> mat;
     
     public Company() {
         
-        Food food = new Food();
+        Maträtter food = new Maträtter();
         
         fly = new ArrayList<Flight>();
         

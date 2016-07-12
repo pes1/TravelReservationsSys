@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package airsystem;
+package resurser;
 
 /**
  *
  * @author User
  */
-public class Pair {
+public class FlygMatMenyer {
     String food;
     int price;
     int klass;
     
-    public Pair(String food, int price, int klass) {
+    public FlygMatMenyer(String food, int price, int klass) {
         this.food = food;
         this.price = price;
         this.klass = klass;
