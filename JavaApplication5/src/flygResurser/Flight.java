@@ -9,8 +9,8 @@ import java.util.Map;
 public class Flight {
     private String destination;
     private String avresesort;
-    private List<Biljett> bokadeBijetter;
-    private HashMap<Integer, Boolean> platser;
+    private List<Biljett> bokadeBijetter = new ArrayList<Biljett>();
+    private HashMap<Integer, Boolean> platser = new HashMap<Integer, Boolean>();
     private int flightNumber;
     private int prisFirst;
     private int prisSecond;
