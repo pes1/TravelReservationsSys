@@ -5,6 +5,8 @@
  */
 package driftBokningssystem;
 
+import flygResurser.Flygplan;
+
 /**
  *
  * @author User
@@ -37,5 +39,12 @@ public class Main {
 *
 *
 */
+
+    Flygplan flygplan1 = new Flygplan("Nisse Viking",5,5);
+
+        System.out.println("driftBokningssystem.Main.main()");
+        System.out.println(flygplan1.toString() );
+
+
     }
 }
