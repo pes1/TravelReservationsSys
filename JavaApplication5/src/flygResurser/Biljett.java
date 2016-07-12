@@ -1,4 +1,4 @@
-package javaapplication5;
+package flygResurser;
 
 public class Biljett {
     private int plats;

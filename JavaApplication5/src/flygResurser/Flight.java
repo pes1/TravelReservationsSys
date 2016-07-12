@@ -1,17 +1,16 @@
-package javaapplication5;
+package flygResurser;
 
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import javaapplication5.Biljett;
 
 public class Flight {
     private String destination;
     private String avresesort;
     private List<Biljett> bokadeBijetter;
-    private Map<Integer, Boolean> platser;
+    private HashMap<Integer, Boolean> platser;
     private int flightNumber;
     
     public Flight(){
@@ -53,7 +52,7 @@ public class Flight {
         this.bokadeBijetter = bokadeBijetter;
     }
 
-    public void setPlatser(Map<Integer, Boolean> platser) {
+    public void setPlatser(HashMap<Integer, Boolean> platser) {
         this.platser = platser;
     }
 
