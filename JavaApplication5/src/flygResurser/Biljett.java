@@ -1,4 +1,4 @@
-package flygResurser;
+package javaapplication5;
 
 public class Biljett {
     private int plats;
@@ -35,6 +35,71 @@ public class Biljett {
         
         return biljettPris;
     }
+
+    public int getPlats() {
+        return plats;
+    }
+
+    public int getPris() {
+        return pris;
+    }
+
+    public int getKlass() {
+        return klass;
+    }
+
+    public boolean isMat() {
+        return mat;
+    }
+
+    public Pair getMatRatt() {
+        return matRatt;
+    }
+
+    public String getFlight() {
+        return flight;
+    }
+
+    public String getForNamn() {
+        return forNamn;
+    }
+
+    public String getEfterNamn() {
+        return efterNamn;
+    }
+
+    public void setPlats(int plats) {
+        this.plats = plats;
+    }
+
+    public void setPris(int pris) {
+        this.pris = pris;
+    }
+
+    public void setKlass(int klass) {
+        this.klass = klass;
+    }
+
+    public void setMat(boolean mat) {
+        this.mat = mat;
+    }
+
+    public void setMatRatt(Pair matRatt) {
+        this.matRatt = matRatt;
+    }
+
+    public void setFlight(String flight) {
+        this.flight = flight;
+    }
+
+    public void setForNamn(String forNamn) {
+        this.forNamn = forNamn;
+    }
+
+    public void setEfterNamn(String efterNamn) {
+        this.efterNamn = efterNamn;
+    }
+    
     
     
 }
