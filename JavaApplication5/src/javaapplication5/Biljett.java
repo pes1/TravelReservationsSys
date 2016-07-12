@@ -1,5 +1,7 @@
 package javaapplication5;
 
+import airsystem.Pair;
+
 public class Biljett {
     private int plats;
     private int pris;
