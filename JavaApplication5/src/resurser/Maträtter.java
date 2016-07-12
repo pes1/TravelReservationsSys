@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package airsystem;
+package resurser;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,26 +12,26 @@ import java.util.List;
  *
  * @author User
  */
-public class Food {
+public class Maträtter {
     
-    Pair p;
-    List<Pair> first,economy;
+    FlygMatMenyer p;
+    List<FlygMatMenyer> first,economy;
             
-    public Food() {
-        first = new ArrayList<Pair>();
-        economy = new ArrayList<Pair>();
+    public Maträtter() {
+        first = new ArrayList<FlygMatMenyer>();
+        economy = new ArrayList<FlygMatMenyer>();
         
-        p = new Pair("Oxfilé",100,1);
+        p = new FlygMatMenyer("Oxfilé",100,1);
         first.add(p);
-        p = new Pair("Lasagne",70,1);
+        p = new FlygMatMenyer("Lasagne",70,1);
         first.add(p);
-        p = new Pair("Köttbullar",70,2);
+        p = new FlygMatMenyer("Köttbullar",70,2);
         economy.add(p);
-        p = new Pair("Gröt",40,2);
+        p = new FlygMatMenyer("Gröt",40,2);
         economy.add(p);
     }
     
-    public List<Pair> getMeny(int v) {
+    public List<FlygMatMenyer> getMeny(int v) {
         if(v >= 1 && v <= 5) {
             return first;
         }

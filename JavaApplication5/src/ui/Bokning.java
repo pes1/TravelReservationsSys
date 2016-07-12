@@ -3,22 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package airsystem;
+package ui;
 
+import bolag.Company;
+import resurser.FlygMatMenyer;
 import java.util.Scanner;
 
 /**
  *
  * @author User
  */
-public class GenerateTicket {
+public class Bokning {
     
     public void meny() {
         Company comp = new Company();
         Scanner sc = new Scanner(System.in);
         int flightval;
         int seat;
-        Pair p;
+        FlygMatMenyer p;
         
         System.out.println("Biljettbokning");
         FlightsArray f = comp.getFlights();
