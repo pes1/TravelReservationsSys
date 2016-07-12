@@ -31,8 +31,18 @@ public class Flight {
         }
     }
     
-    public int getPlats() {
-        for(int i = 1;i<=10;i++) {
+    public int getPlatsFirst() {
+        for(int i = 1;i<=5;i++) {
+            if(platser.get(i) == false) {
+                platser.put(i, true);
+                return i;
+            }
+        }
+        return 0;
+    }
+    
+    public int getPlatsSecond() {
+        for(int i = 6;i<=10;i++) {
             if(platser.get(i) == false) {
                 platser.put(i, true);
                 return i;
