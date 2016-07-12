@@ -57,7 +57,7 @@ public class Main {
 
         Flight firstFlight1;
         firstFlight1 = new Flight("LHR","ARN", bokadeBijetter, platser, 0);
-        Flight f = new Flight("LHR","ARN", "flygplan1", "LHR");
+//        Flight f = new Flight("LHR","ARN", "flygplan1", "LHR");
 //        Flight f = new Flight("LHR","ARN", "flygplan1", "LHR");
 //        Flight f = new Flight("Airbus A-320","SK1020", "ARN", "LHR");
 //        Flight f = new Flight("Airbus A-321","SK1220", "ARN", "OSL");
