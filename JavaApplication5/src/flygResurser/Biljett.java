@@ -1,6 +1,4 @@
-package javaapplication5;
-
-import airsystem.Pair;
+package flygResurser;
 
 public class Biljett {
     private int plats;

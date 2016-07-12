@@ -1,10 +1,10 @@
-package javaapplication5;
+package flygResurser;
 
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import javaapplication5.Biljett;
+import flygResurser.Biljett;
 
 public class Flight {
     private String destination;
