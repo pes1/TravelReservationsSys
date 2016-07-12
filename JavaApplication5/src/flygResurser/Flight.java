@@ -1,6 +1,7 @@
 package flygResurser;
 
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -8,18 +9,15 @@ import java.util.Map;
 public class Flight {
     private String destination;
     private String avresesort;
-    private List<Biljett> bokadeBijetter;
+    private List<Biljett> bokadeBijetter = new ArrayList<Biljett>();
     private HashMap<Integer, Boolean> platser = new HashMap<Integer, Boolean>();
     private int flightNumber;
     private int prisFirst;
     private int prisSecond;
     
-    public Flight(String destination, String avreseort, List<Biljett> bokadeBijetter, int flightNumber, int prisFirst, int prisSecond){
+    public Flight(String destination, String avreseort, int flightNumber, int prisFirst, int prisSecond){
         this.destination = destination;
         this.avresesort = avreseort;
-        this.bokadeBijetter = bokadeBijetter;
-
-        this.platser = platser;
         this.flightNumber = flightNumber;
         this.prisFirst = prisFirst;
         this.prisSecond = prisSecond;
