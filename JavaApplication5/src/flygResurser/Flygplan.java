@@ -19,4 +19,15 @@ public class Flygplan {
 	this.antalfirstklass = antalfirstklass;
         this.antalsecondklass = antalsecondklass;
 }
-}
+
+    @Override
+    public String toString() {
+        return name + " " + "Antal 1:a klass " + antalfirstklass + " "
+                + "Antal 2:a klass " + antalsecondklass;
+    }
+    
+    
+    
+    
+    
+} //-- of class
