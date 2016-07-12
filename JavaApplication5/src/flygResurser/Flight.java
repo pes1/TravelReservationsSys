@@ -9,12 +9,12 @@ public class Flight {
     private String destination;
     private String avresesort;
     private List<Biljett> bokadeBijetter;
-    private HashMap<Integer, Boolean> platser;
+    private HashMap<Integer, Boolean> platser = new HashMap<Integer, Boolean>();
     private int flightNumber;
     private int prisFirst;
     private int prisSecond;
     
-    public Flight(String destination, String avreseort, List<Biljett> bokadeBijetter, HashMap<Integer, Boolean> platser, int flightNumber, int prisFirst, int prisSecond){
+    public Flight(String destination, String avreseort, List<Biljett> bokadeBijetter, int flightNumber, int prisFirst, int prisSecond){
         this.destination = destination;
         this.avresesort = avreseort;
         this.bokadeBijetter = bokadeBijetter;
