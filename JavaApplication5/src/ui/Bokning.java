@@ -16,7 +16,7 @@ import java.util.Scanner;
 public class Bokning {
     
     public void meny() {
-        Company comp = new Company();
+//        Company comp = new Company();
         Scanner sc = new Scanner(System.in);
         int flightval;
         int seat;

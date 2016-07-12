@@ -5,7 +5,10 @@
  */
 package driftBokningssystem;
 
-import flygResurser.Flygplan;
+import flygResurser.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -44,6 +47,26 @@ public class Main {
 
         System.out.println("driftBokningssystem.Main.main()");
         System.out.println(flygplan1.toString() );
+        
+        Company comp = new Company();
+        
+        //-- bör nog initaliseras
+        ArrayList<Biljett>    bokadeBijetter = new ArrayList<Biljett>();
+        Map<Integer, Boolean> platser        = new Map<Integer, Boolean>;
+   // public Flight(String destination, String avreseort, List<Biljett> bokadeBijetter, Map<Integer, Boolean> platser, int flightNumber){
+
+        Flight firstFlight1;
+        firstFlight1 = new Flight("LHR","ARN", bokadeBijetter, platser, 0);
+        Flight f = new Flight("LHR","ARN", "flygplan1", "LHR");
+//        Flight f = new Flight("LHR","ARN", "flygplan1", "LHR");
+//        Flight f = new Flight("Airbus A-320","SK1020", "ARN", "LHR");
+//        Flight f = new Flight("Airbus A-321","SK1220", "ARN", "OSL");
+//        Flight f = new Flight("Airbus A-321","SK1440", "ARN", "MAD");
+//        Flight f = new Flight("Airbus A-320","SK4320", "ARN", "ORY");
+
+
+
+
 
 
     }

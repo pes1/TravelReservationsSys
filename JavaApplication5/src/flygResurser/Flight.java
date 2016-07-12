@@ -14,11 +14,11 @@ public class Flight {
     private int flightNumber;
     
     public Flight(String destination, String avreseort, List<Biljett> bokadeBijetter, Map<Integer, Boolean> platser, int flightNumber){
-        this.destination = destination;
-        this.avresesort = avreseort;
+        this.destination    = destination;
+        this.avresesort     = avreseort;
         this.bokadeBijetter = bokadeBijetter;
-        this.platser = platser;
-        this.flightNumber = flightNumber;
+        this.platser        = platser;
+        this.flightNumber   = flightNumber;
     }
     
     public void fyllmap() {
