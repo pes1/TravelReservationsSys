@@ -11,10 +11,12 @@ package flygResurser;
  */
 public class Flygplan {
     String name;
-    int antalstolar;
+    int antalfirstklass;
+    int antalsecondklass;
 	
-    public Flygplan(String name, int antalstolar) {
+    public Flygplan(String name, int antalfirstklass, int antalsecondklass) {
 	this.name = name;
-	this.antalstolar = antalstolar;
+	this.antalfirstklass = antalfirstklass;
+        this.antalsecondklass = antalsecondklass;
 }
 }
