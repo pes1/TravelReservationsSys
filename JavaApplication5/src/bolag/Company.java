@@ -52,5 +52,9 @@ public class Company {
     
     }
     
+    public void makeProfit() {
+        
+    }
+    
     
 }

@@ -20,6 +20,15 @@ public class Flygplan {
         this.antalsecondklass = antalsecondklass;
 }
 
+    
+    public int getSeatFirst() {
+        return antalfirstklass;
+    }
+    
+    public int getSeatSecond() {
+        return antalsecondklass;
+    }
+    
     @Override
     public String toString() {
         return name + " " + 

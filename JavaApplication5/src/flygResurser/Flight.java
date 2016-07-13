@@ -15,22 +15,12 @@ public class Flight {
     private int prisFirst;
     private int prisSecond;
     
-    public Flight(
-            String                    destination, 
-            String                    avreseort, 
-            List<Biljett>             bokadeBijetter, 
-            HashMap<Integer, Boolean> platser, 
-            int                       flightNumber, 
-            int                       prisFirst, 
-            int                       prisSecond)
-    {
-        this.destination    = destination;
-        this.avresesort     = avreseort;
-        this.bokadeBijetter = bokadeBijetter;
-        this.platser        = platser;
-        this.flightNumber   = flightNumber;
-        this.prisFirst      = prisFirst;
-        this.prisSecond     = prisSecond;
+    public Flight(String destination, String avreseort, int flightNumber, int prisFirst, int prisSecond){
+        this.destination = destination;
+        this.avresesort = avreseort;
+        this.flightNumber = flightNumber;
+        this.prisFirst = prisFirst;
+        this.prisSecond = prisSecond;
     }
 
     
