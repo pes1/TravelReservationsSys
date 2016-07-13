@@ -5,6 +5,7 @@
  */
 package driftBokningssystem;
 
+import bolag.Company;
 import flygResurser.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -48,7 +49,7 @@ public class Main {
         System.out.println("driftBokningssystem.Main.main()");
         System.out.println(flygplan1.toString() );
         
-        Company comp = new Company();
+        Company comp = new Company(flygplan1);
         
         //-- bör nog initaliseras
 //        List<Biljett>         bokadeBijetter = new List<Biljett>();
