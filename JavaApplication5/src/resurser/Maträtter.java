@@ -15,7 +15,7 @@ import java.util.List;
 public class Maträtter {
     
     FlygMatMenyer p;
-    List<FlygMatMenyer> first,economy;
+    static List<FlygMatMenyer> first,economy;
             
     public Maträtter() {
         first = new ArrayList<FlygMatMenyer>();
@@ -25,19 +25,24 @@ public class Maträtter {
         first.add(p);
         p = new FlygMatMenyer("Lasagne",70,1);
         first.add(p);
+        p = new FlygMatMenyer("Ingen mat",0,1);
+        first.add(p);
         p = new FlygMatMenyer("Köttbullar",70,2);
         economy.add(p);
         p = new FlygMatMenyer("Gröt",40,2);
         economy.add(p);
+        p = new FlygMatMenyer("Ingen mat",0,2);
+        economy.add(p);
     }
     
     public List<FlygMatMenyer> getMeny(int v) {
-        if(v >= 1 && v <= 5) {
+        if(v == 1) {
             return first;
         }
-        else if(v >= 6 && v <= 10) {
-                return economy;
+        else if(v == 2) {
+            return economy;
         }
         return null;
     }
+    
 }

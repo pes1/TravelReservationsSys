@@ -5,10 +5,7 @@
  */
 package flygResurser;
 
-/**
- *
- * @author User
- */
+
 public class Flygplan {
     String name;
     int antalfirstklass;
@@ -40,4 +37,4 @@ public class Flygplan {
     
     
     
-} //-- of class
+} 

@@ -12,10 +12,7 @@ import java.util.List;
 import java.util.Map;
 import ui.Bokning;
 
-/**
- *
- * @author User
- */
+
 public class Main {
     public static void main(String[] args){
         //-- 
@@ -46,34 +43,32 @@ public class Main {
 
     Flygplan flygplan1 = new Flygplan("Nisse Viking",5,5);
 
-        System.out.println("driftBokningssystem.Main.main()");
         System.out.println(flygplan1.toString() );
         
         Company comp = new Company(flygplan1);
         
-        //-- bör nog initaliseras
-//        List<Biljett>         bokadeBijetter = new List<Biljett>();
-        HashMap<Integer, Boolean> platser    = new HashMap<Integer, Boolean>;
-   // public Flight(String destination, String avreseort, List<Biljett> bokadeBijetter, Map<Integer, Boolean> platser, int flightNumber){
-
+        ArrayList<Flight> flightList = new ArrayList<Flight>();
+        
+        int fplats;
+        
         Flight firstFlight1;
-        firstFlight1 = new Flight("LHR","ARN", bokadeBijetter, platser, 0, 20000, 5000);
-//        Flight f = new Flight("LHR","ARN", "flygplan1", "LHR");
-//        Flight f = new Flight("LHR","ARN", "flygplan1", "LHR");
-//        Flight f = new Flight("Airbus A-320","SK1020", "ARN", "LHR");
-//        Flight f = new Flight("Airbus A-321","SK1220", "ARN", "OSL");
-//        Flight f = new Flight("Airbus A-321","SK1440", "ARN", "MAD");
-//        Flight f = new Flight("Airbus A-320","SK4320", "ARN", "ORY");
+       
+        firstFlight1 = new Flight("LHR","ARN", "BK1223", 20000, 5000);
+        flightList.add(firstFlight1);
+        
+        firstFlight1.fyllmapFirst(flygplan1.getSeatFirst());
+        firstFlight1.fyllmapSecond(flygplan1.getSeatSecond());
+        
 
-        ArrayList<Biljett> flightList = new ArrayList<Biljett>();
+        
         flightList.add(firstFlight1);
 
         
         
-        //--  booking(company1, ArrayList<flight> flight1);
-        //-- Återkommer hit när bokninssystemet stängs av.......
+        
         Bokning bokningsSystemetBlåFlyg = new Bokning(flightList);
+       
+        //bokningsSystemetBlåFlyg.generateBiljetter();
         bokningsSystemetBlåFlyg.meny();
-
     }
 }

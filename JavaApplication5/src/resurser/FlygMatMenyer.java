@@ -24,6 +24,10 @@ public class FlygMatMenyer {
         return food;
     }
     
+    public String getNoFood() {
+        return "Ingen mat";
+    }
+    
     public int getPrice() {
         return price;
     }
